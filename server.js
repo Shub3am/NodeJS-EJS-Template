@@ -8,7 +8,7 @@ App.use(express.static(path.join(__dirname + "/public")));
 App.set("view engine", "ejs");
 
 App.get("/", (req, res) => {
-  res.send("Hello! Thanks For Using This Template");
+  res.render("Home");
 });
 
 App.listen(process.env.PORT || 3000, () => {
